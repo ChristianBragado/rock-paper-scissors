@@ -10,11 +10,6 @@
 
     <script>
 
-        // create a function getComputerChoice that will return one
-        // of three strings at random: Rock paper or scissors
-        // create a variable that will hold an array of all three strings
-        // use random() function to print out a random string from arr
-
         function getComputerChoice() {
             let choices = ["rock", "paper", "scissors"]
             let randomChoice = Math.floor(Math.random() * choices.length)
@@ -24,12 +19,12 @@
         function playRound(playerSelection, computerSelection) {
             if (playerSelection == "rock" && computerSelection == "paper") {
                 return "You Lose! paper beats rock!"
-            } else if (playerSelection == "paper" && computerSelection == "scissors") {
-                return "You lose! scissors beats paper!"
-            } else if (playerSelection == "scissors" && computerSelection == "rock") {
-                return "you lose! rock beats scissors!"
-            } else if (playerSelection == "rock" && computerSelection == "scissors") {
-                return "You win! rock beats scissors!" 
+                } else if (playerSelection == "paper" && computerSelection == "scissors") {
+                    return "You lose! scissors beats paper!"
+                } else if (playerSelection == "scissors" && computerSelection == "rock") {
+                    return "you lose! rock beats scissors!"
+                } else if (playerSelection == "rock" && computerSelection == "scissors") {
+                    return "You win! rock beats scissors!" 
                 } else if (playerSelection == "paper" && computerSelection == "rock") {
                     return "You win! paper beats rock!"
                 } else if (playerSelection == "scissors" && computerSelection == "paper") {
@@ -43,7 +38,7 @@
 
 
         function game() {
-            const playerSelection = prompt("Please choose what you want to play: " + "".toLowerCase())
+            const playerSelection = prompt("Please choose what you want to play: " + " ".toLowerCase())
             const computerSelection = getComputerChoice()
 
             for (let i = 0; i < 5; i++) {
